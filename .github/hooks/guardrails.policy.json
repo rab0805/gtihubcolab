@@ -6,7 +6,8 @@
     { "pattern": "rm\\s+-rf\\s+(/|~|\\*)", "reason": "Recursive delete of root/home/wildcard is not allowed" },
     { "pattern": "git\\s+push\\s+.*(--force|-f)\\b", "reason": "Force-push is not allowed; open a pull request" },
     { "pattern": "curl[^|]*\\|\\s*(ba|z)?sh", "reason": "Piping downloads into a shell is not allowed" },
-    { "pattern": "\\bsudo\\b", "reason": "Privilege escalation is not allowed" }
+    { "pattern": "\\bsudo\\b", "reason": "Privilege escalation is not allowed" },
+     { "pattern": "\\bnpm\\s+publish\\b", "reason": "Publishing packages from an agent session is not allowed" }
   ],
   "writeToolPattern": "(edit|write|create|replace|patch|delete|move|rename)"
 }

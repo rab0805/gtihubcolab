@@ -150,6 +150,8 @@ flowchart LR
 |---|---|
 | Codespace creation is blocked | Your org may not allow Codespaces for this owner. Create the repo under your **personal** account, or use the **dev container locally**: clone the repo, open in VS Code with Docker running → **Dev Containers: Reopen in Container**. |
 | `npm run verify` shows ❌ Node.js | The dev container did not build. Command Palette → **Codespaces: Rebuild Container**. |
+| `Command failed: gh --version (optional)` | `gh` is the optional GitHub CLI check; you can ignore it for this lab. To install it on Windows, run `winget install --id GitHub.cli`, reopen the terminal, then check with `gh --version`. |
+| `Command failed: gh aw version (optional)` | The `gh-aw` extension is only needed for Lab A5, so you can ignore this for now. Before A5, run `npm`, then verify with `gh aw version`. |
 | Port 3000 does not open | **Ports** tab → right-click 3000 → **Open in Browser**. |
 | Chat says you have no access | Check you're signed in with the GitHub account that has your organisation's Copilot license (Accounts icon, bottom-left). |
 | Copilot harness missing | Update VS Code & extension; if org policy blocks it, use **Local** for today and tell a coach (it's deprecated, but works for most labs). |
